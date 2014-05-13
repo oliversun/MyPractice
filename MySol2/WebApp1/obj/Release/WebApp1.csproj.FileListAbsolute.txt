@@ -1,0 +1,4 @@
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApp1\bin\WebApp1.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApp1\bin\WebApp1.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApp1\obj\Release\WebApp1.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApp1\obj\Release\WebApp1.pdb

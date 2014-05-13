@@ -1,0 +1,7 @@
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApplication1\bin\WebApplication1.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApplication1\bin\WebApplication1.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApplication1\bin\ClassLibrary.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApplication1\bin\ClassLibrary.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApplication1\obj\Release\WebApplication1.csprojResolveAssemblyReference.cache
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApplication1\obj\Release\WebApplication1.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApplication1\obj\Release\WebApplication1.pdb

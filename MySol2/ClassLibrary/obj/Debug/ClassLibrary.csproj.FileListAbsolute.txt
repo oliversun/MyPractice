@@ -1,0 +1,9 @@
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ClassLibrary\bin\Debug\ClassLibrary.dll
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ClassLibrary\bin\Debug\ClassLibrary.pdb
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ClassLibrary\obj\Debug\ClassLibrary.dll
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ClassLibrary\obj\Debug\ClassLibrary.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ClassLibrary\bin\Debug\ClassLibrary.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ClassLibrary\bin\Debug\ClassLibrary.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ClassLibrary\obj\Debug\ClassLibrary.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ClassLibrary\obj\Debug\ClassLibrary.pdb

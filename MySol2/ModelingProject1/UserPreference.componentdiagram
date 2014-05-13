@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="655fa5ad-5eb0-4e4b-873b-2868d4c24683" name="UserPreference" linkedPackageId="4b3fcd6d-39a7-4d0b-bdf2-89368a757b77" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <ownedCommentsInternal>
+    <comment Id="2159e948-88dd-4b46-9d61-5433fb98f8bf">
+      <elementDefinition Id="64552762-d8d0-431c-82dc-eeb6cc977261" />
+      <body>根据RequestType反射获得具体的实例</body>
+    </comment>
+    <comment Id="8e943f01-f532-4bae-a28e-c256fa2425aa">
+      <elementDefinition Id="a61deb73-e795-4ef1-92cf-369043e2a497" />
+      <body>业务处理</body>
+    </comment>
+    <comment Id="7cadc344-8cdd-4f60-a06c-f67a72bac3a7">
+      <elementDefinition Id="1c9a9c08-456b-443b-b354-f95c03feb31c" />
+      <body>数据访问
+</body>
+    </comment>
+    <comment Id="e63cd42f-54de-4285-9f0d-e66a2f1b9538">
+      <elementDefinition Id="569fa155-e56e-4b02-8b3e-20f77b554418" />
+      <body>解析请求 XML
+调用业务处理层
+返回响应XML</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="50b58a86-267a-4ffa-9747-738b4dd2769b">
+      <profileInstance Id="440c33aa-154f-475e-b8d0-409f236bd62a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="bcbb3aeb-d3dd-41e1-b990-cfe3da896c09">
+      <profileInstance Id="fde5b4f1-63a3-44cb-84b6-05fcac65d4a2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="66310bc8-7e2f-426e-afd7-8987c08fe485" name="Customer.User.UService.UI(Web Service)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a87dd279-9148-48d8-afc4-a59bf9deab34" />
+        <ownedAttributesInternal>
+          <part Id="0fb09ba9-8c53-47b8-afd8-22953fcd1ab9" name="UServiceImplement" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="8f3be316-1f09-48a5-8026-bb8e928d19da" />
+            <targetNamedElementsInternal>
+              <connector Id="fc7af75f-5f5d-4ed7-bf0e-f85ece2d588e" isLeaf="false" isStatic="false">
+                <partMoniker Id="2a0fc750-2723-4f9a-a9a7-0d510a5d04cb" LastKnownName="GetServicePromoteMessage" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="c32c64f9-560d-4e0a-adcc-ff3ee2e7986e">
+                      <elementDefinition Id="4b2f2892-8baf-4d7e-b317-f7702f08fe3a" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="8fc12913-96a5-4804-83ba-7d0ff92df6f1">
+                      <elementDefinition Id="4b635fea-6bd7-446d-bd6c-68b3d7f5cb35" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="ff8ce107-d184-423c-934c-709997621062" />
+              </connector>
+              <connector Id="b5c0e724-cd67-43d9-99db-943f1ee855f1" isLeaf="false" isStatic="false">
+                <partMoniker Id="e596fafa-34a1-4f17-a8bd-a74c25a0e0ca" LastKnownName="GetUserPreferences" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="1ab9e130-9de0-4172-af94-60d3f0f6e00f">
+                      <elementDefinition Id="322dce31-f750-4080-9a3c-5fb883368532" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="42ed7b48-3b76-4ef4-bc98-dd6d0278b3a6">
+                      <elementDefinition Id="89628c4e-6b01-48d0-969d-5b6ed73bdf81" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="b2c9cc41-3e27-4fc2-95e7-e4ff965fda5d" />
+              </connector>
+              <connector Id="feef952d-50e1-4aaa-992c-36413beac890" isLeaf="false" isStatic="false">
+                <partMoniker Id="0e781a97-90d2-4a34-8b98-17bc1819679a" LastKnownName="GoodPerson" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="60a6aedb-9c2d-4b70-8940-2ce5c67761e9">
+                      <elementDefinition Id="f677a675-9ee3-4632-adbc-41401b901c94" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="93476b78-cf31-43ab-b960-426db6a79272">
+                      <elementDefinition Id="38edcac0-2c29-48a1-b66e-2d4bb5b1589f" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="fbf9114c-8e5a-4558-85df-00e4ab1ce0c8" />
+              </connector>
+              <connector Id="7eb587a3-57eb-4f75-b78a-5a086c2517aa" isLeaf="false" isStatic="false">
+                <partMoniker Id="ca0330a5-24da-46ea-8720-bb480d654d08" LastKnownName="UserIVRRank" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="acadcf0a-4570-45dc-86e8-ff15d9538372">
+                      <elementDefinition Id="b85c1aca-93b1-4185-8b96-41f4dfb81114" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="3b37f211-4380-411d-8369-d53ad1c323c3">
+                      <elementDefinition Id="cbf0fd46-cda2-41b7-b6f1-c94217b1e580" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="a176d1bd-f1d5-4376-a9e0-07772c2a4f37" />
+              </connector>
+              <connector Id="296194a1-0bfc-469f-bdf2-22e40a80e8e4" isLeaf="false" isStatic="false">
+                <partMoniker Id="2a0fc750-2723-4f9a-a9a7-0d510a5d04cb" LastKnownName="GetServicePromoteMessage" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="4f076162-4adb-4f87-b06f-c3f05df4ccab">
+                      <elementDefinition Id="ac19d2d8-2d34-4197-b244-786e38e19529" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="f86160d3-aced-4bc8-b70d-11e95256735c">
+                      <elementDefinition Id="a4df4a34-1024-4678-b27d-90cc8cc63548" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="97bafcdf-5fe6-4cee-98d2-905b5b4b3204" />
+              </connector>
+              <connector Id="c99bc039-c934-4de4-b509-5c5580981fac" isLeaf="false" isStatic="false">
+                <partMoniker Id="e596fafa-34a1-4f17-a8bd-a74c25a0e0ca" LastKnownName="GetUserPreferences" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="68837598-586e-40ab-99c5-c3ef14b7d572">
+                      <elementDefinition Id="9b5d992c-e705-4c70-be54-ab8ab41f7162" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="fe62a362-2d90-49be-a689-1fcd18297580">
+                      <elementDefinition Id="82c423cc-e485-4eab-a6f1-03d51f6b067c" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="a5ed7d03-7024-4265-a2ba-d18b15a6dc2b" />
+              </connector>
+              <connector Id="4a551adc-b9d1-4b26-b166-26ce2cd6294f" isLeaf="false" isStatic="false">
+                <partMoniker Id="0e781a97-90d2-4a34-8b98-17bc1819679a" LastKnownName="GoodPerson" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="f9cd0c17-129e-46bd-acb2-42724c5d93bb">
+                      <elementDefinition Id="2da90442-bcc3-4568-9366-51d89e388b33" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="52348f2e-b1e5-4e53-aa8a-a38fea0bec54">
+                      <elementDefinition Id="3e386655-44e4-429c-bbd0-cd0d7fc0e81a" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="4cef4569-2eb1-44ec-b4d3-85dc9cd0d952" />
+              </connector>
+              <connector Id="f9f30a11-a841-4723-8299-facafb4ec12d" isLeaf="false" isStatic="false">
+                <partMoniker Id="ca0330a5-24da-46ea-8720-bb480d654d08" LastKnownName="UserIVRRank" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="da1b0c5b-f663-4bb6-87da-87de7c2865a9">
+                      <elementDefinition Id="bcc3ec80-d85d-4f25-8183-42dd6b4bf2f6" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="2e2bb0f5-f5af-4455-b428-9840b6dc5f57">
+                      <elementDefinition Id="2cdd5920-c885-4e77-afaf-e972d7c95bd4" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="6883d4bd-8448-4a86-8fec-c79b07dde503" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="b9429510-4ecc-4bcc-9357-95672d7a76c3" LastKnownName="Component1" />
+            </type_NamedElement>
+          </part>
+          <part Id="2a0fc750-2723-4f9a-a9a7-0d510a5d04cb" name="GetServicePromoteMessage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="94efd931-d2db-4364-af34-f0b2f1954b34" />
+            <targetNamedElementsInternal>
+              <connector Id="4b6b8156-027d-49a9-b362-64393dd8ecd8" isLeaf="false" isStatic="false">
+                <partMoniker Id="f8084246-5cde-49e4-80a7-72fb345d7eab" LastKnownName="Business" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="632d71fd-bc1f-4f9e-8c27-fdbcf4a7115c">
+                      <elementDefinition Id="6c8e9f88-cef6-4dc7-83a5-cde6f68d90f8" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="7fc46d1a-ba49-4fd0-9c1d-1a0935d81274">
+                      <elementDefinition Id="0de90aab-2e43-44a4-a1a0-46502607b571" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="026c6c69-6c36-4036-9351-64b577dda201" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="e7e3a069-a33f-4b86-ac0d-f0fe8e0a8ba6" LastKnownName="Component2" />
+            </type_NamedElement>
+          </part>
+          <part Id="e596fafa-34a1-4f17-a8bd-a74c25a0e0ca" name="GetUserPreferences" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="27f3cff6-1be4-4f20-89c7-56e5b7ebac24" />
+            <targetNamedElementsInternal>
+              <connector Id="f77b45e4-889e-4751-b8e3-f37df5e21f60" isLeaf="false" isStatic="false">
+                <partMoniker Id="f8084246-5cde-49e4-80a7-72fb345d7eab" LastKnownName="Business" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="4afda2df-dfcf-4793-b92a-de0edcddceaa">
+                      <elementDefinition Id="369eb280-5918-4575-bf02-ab59f0e637f4" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="be3d3726-2221-46cd-95f7-f2d9eb221fb2">
+                      <elementDefinition Id="d1343357-8383-4722-b9c5-73f6135b324c" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="5845c619-fab6-41ee-8618-0092454a7dd9" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="11bfb99e-1950-4f6a-9753-427fe8da54e6" LastKnownName="Component3" />
+            </type_NamedElement>
+          </part>
+          <part Id="0e781a97-90d2-4a34-8b98-17bc1819679a" name="GoodPerson" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="ff655fa4-09db-4968-9b08-1074aa227bf6" />
+            <targetNamedElementsInternal>
+              <connector Id="bf889bc4-ee6f-4a5a-b0dc-b19d5130154d" isLeaf="false" isStatic="false">
+                <partMoniker Id="f8084246-5cde-49e4-80a7-72fb345d7eab" LastKnownName="Business" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="22bbe1d4-a430-448d-83de-ad75b32d0deb">
+                      <elementDefinition Id="d7ce91a3-600b-4b80-ba22-5ffb51ef1037" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="5627a766-3fa9-4c36-93c5-b2dafbaad463">
+                      <elementDefinition Id="fff14be3-3696-44a5-b6c7-497a4f7d03c2" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="d93e888a-1f31-4887-92c9-77f54a43936d" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="418bbdad-5041-4c14-9b45-741daf9c6c90" LastKnownName="Component41" />
+            </type_NamedElement>
+          </part>
+          <part Id="ca0330a5-24da-46ea-8720-bb480d654d08" name="UserIVRRank" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="4cb71584-eb89-4b98-9d9f-a4dbc0a4ab33" />
+            <targetNamedElementsInternal>
+              <connector Id="6c0d1755-e056-4bdc-8b0c-ba0c0b8f45ff" isLeaf="false" isStatic="false">
+                <partMoniker Id="f8084246-5cde-49e4-80a7-72fb345d7eab" LastKnownName="Business" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="7bcc33cc-6e08-4a6b-a9c1-e53e193ab221">
+                      <elementDefinition Id="44e86626-e80c-4ed4-b2c5-734778749e34" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="fdcbe6a9-c50d-4c7a-8bdf-b9c03c998368">
+                      <elementDefinition Id="4d847fa6-615b-4ec6-9426-1f9f5e168fac" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="a5a41655-ca35-4249-bfe0-df88198b9142" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="0921ed5a-8079-474d-9fe4-4ae9f71faee6" LastKnownName="Component5" />
+            </type_NamedElement>
+          </part>
+          <part Id="f8084246-5cde-49e4-80a7-72fb345d7eab" name="Business" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="303df40e-3738-4ad3-914d-c2a9dea933f6" />
+            <targetNamedElementsInternal>
+              <connector Id="a27630fa-a2d9-47a8-ab7b-26693b9ee1db" isLeaf="false" isStatic="false">
+                <partMoniker Id="d8aeeac8-2ec1-4298-9c7d-9be32bba14c4" LastKnownName="Data" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="a0d54fa1-9364-43ea-b18b-ccec4d328664">
+                      <elementDefinition Id="f6fd0ec7-8927-42bb-abd3-e37821121d7a" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="4cac0dc1-6a95-4e1f-83a2-059ad2e0e5bb">
+                      <elementDefinition Id="7d68197e-9a9f-4b66-af66-0978b11128b9" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="9a929842-8c59-4527-add9-6490f58f045f" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="b016b258-abfd-454c-8e1c-9dda5299116e" LastKnownName="Component6" />
+            </type_NamedElement>
+          </part>
+          <part Id="d8aeeac8-2ec1-4298-9c7d-9be32bba14c4" name="Data" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="46c85c60-3208-45ad-a09a-4243dd5825e8" />
+            <type_NamedElement>
+              <componentMoniker Id="4e380a3b-d8e0-4337-8e04-05645567bcec" LastKnownName="Component7" />
+            </type_NamedElement>
+          </part>
+          <providedInterface Id="371699e7-ad25-4186-aad2-f1dad47e78c4" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="9e785eb9-a7cc-453a-a73a-ed51d9f39dfd" />
+            <targetNamedElementsInternal>
+              <connector Id="4b800ca1-435a-4715-8919-fb896ce177ee" isLeaf="false" isStatic="false">
+                <partMoniker Id="0fb09ba9-8c53-47b8-afd8-22953fcd1ab9" LastKnownName="UServiceImplement" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="c1641bd4-48d0-4ea5-91f8-7d3a1cc57596">
+                      <elementDefinition Id="7e5f8fa2-62b9-4c4d-ba8f-b0439688e5ab" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="730f7b47-4786-420f-b80c-bb53c784f2ed">
+                      <elementDefinition Id="eda2c98c-9087-4cbe-b6f9-b2d2ed4ba026" />
+                      <portWithPart>
+                        <providedInterfaceMoniker Id="6cc12d33-4bd4-4513-b54b-670e39c1e73a" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="a39fc36f-fdfd-4319-9acc-226ffa525552" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="03c788f8-35c2-415f-b448-95a356085319" LastKnownName="Listen Request" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b9429510-4ecc-4bcc-9357-95672d7a76c3" name="Component1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7dd355de-d54a-4263-ba03-8c0ae3ddd5f8" />
+        <ownedAttributesInternal>
+          <providedInterface Id="6cc12d33-4bd4-4513-b54b-670e39c1e73a" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="fea07112-5e9e-4bf4-b9e4-fa969b4a4ed3" />
+            <type_NamedElement>
+              <interfaceMoniker Id="6b60eaea-783d-4f9a-8c14-80c961195b9c" LastKnownName="RequestDeal" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="6b60eaea-783d-4f9a-8c14-80c961195b9c" name="RequestDeal" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2c5481b6-ea13-410d-8025-d36b75679c2d" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="e7e3a069-a33f-4b86-ac0d-f0fe8e0a8ba6" name="Component2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6a41ca38-bd46-4fe3-94a7-925d139b6cf4" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="11bfb99e-1950-4f6a-9753-427fe8da54e6" name="Component3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d5e89134-bbc3-4b6a-a3d5-560aadfb5109" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="418bbdad-5041-4c14-9b45-741daf9c6c90" name="Component41" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4bf59a25-3b21-468b-b900-cc774e37fe13" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="0921ed5a-8079-474d-9fe4-4ae9f71faee6" name="Component5" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5dc94399-5f52-42d0-a33b-004def626000" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b016b258-abfd-454c-8e1c-9dda5299116e" name="Component6" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1d05a726-897f-4c2e-9bf4-f9f5379eebf4" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="4e380a3b-d8e0-4337-8e04-05645567bcec" name="Component7" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="efeeeab8-f362-4e0f-9a27-1cd8e93d15d0" />
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="03c788f8-35c2-415f-b448-95a356085319" name="Listen Request" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4efd006-c3eb-4b75-ae79-5cb65d6bf3a1" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="4b3fcd6d-39a7-4d0b-bdf2-89368a757b77" name="ModelingProject1">
+    <elementDefinition Id="a9513c1f-fb1e-4ff3-bf9e-f936b5a121d5" />
+  </package>
+</componentModel>

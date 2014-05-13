@@ -1,0 +1,8 @@
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\DymaticCompiler\bin\Release\DymaticCompiler.exe.config
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\DymaticCompiler\bin\Release\DymaticCompiler.exe
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\DymaticCompiler\bin\Release\DymaticCompiler.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\DymaticCompiler\obj\x86\Release\DymaticCompiler.Form1.resources
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\DymaticCompiler\obj\x86\Release\DymaticCompiler.Properties.Resources.resources
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\DymaticCompiler\obj\x86\Release\DymaticCompiler.csproj.GenerateResource.Cache
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\DymaticCompiler\obj\x86\Release\DymaticCompiler.exe
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\DymaticCompiler\obj\x86\Release\DymaticCompiler.pdb

@@ -1,0 +1,25 @@
+E:\My Documents\Visual Studio 2010\Projects\MySol2\ConApp\bin\Debug\ConApp.exe
+E:\My Documents\Visual Studio 2010\Projects\MySol2\ConApp\bin\Debug\ConApp.pdb
+E:\My Documents\Visual Studio 2010\Projects\MySol2\ConApp\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\My Documents\Visual Studio 2010\Projects\MySol2\ConApp\obj\x86\Debug\ConApp.exe
+E:\My Documents\Visual Studio 2010\Projects\MySol2\ConApp\obj\x86\Debug\ConApp.pdb
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ConApp\bin\Debug\ConApp.exe
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ConApp\bin\Debug\ConApp.pdb
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ConApp\obj\x86\Debug\ConApp.exe
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ConApp\obj\x86\Debug\ConApp.pdb
+d:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ConApp\bin\Debug\ConApp.exe.config
+d:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ConApp\bin\Debug\Ctrip.Common.ISecurity.dll
+d:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ConApp\bin\Debug\ctrip.common.security.dll
+d:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ConApp\bin\Debug\ctrip.common.security.encryptcard.dll
+d:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ConApp\bin\Debug\Ctrip.Common.Utility.dll
+d:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ConApp\bin\Debug\Ctrip.Common.Utility.pdb
+d:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ConApp\bin\Debug\Ctrip.Common.Utility.xml
+d:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\ConApp\bin\Debug\PDFLibNet.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Debug\ConApp.exe.config
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\obj\x86\Debug\ConApp.exe
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\obj\x86\Debug\ConApp.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Debug\ConApp.exe
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Debug\ConApp.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Debug\Ctrip.Common.Utility.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Debug\Ctrip.Common.Utility.xml
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\obj\x86\Debug\ConApp.csprojResolveAssemblyReference.cache

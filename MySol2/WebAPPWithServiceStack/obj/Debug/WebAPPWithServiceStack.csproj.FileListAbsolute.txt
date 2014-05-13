@@ -1,0 +1,14 @@
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebAPPWithServiceStack\bin\WebAPPWithServiceStack.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebAPPWithServiceStack\bin\WebAPPWithServiceStack.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebAPPWithServiceStack\bin\ServiceStack.Client.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebAPPWithServiceStack\bin\ServiceStack.Common.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebAPPWithServiceStack\bin\ServiceStack.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebAPPWithServiceStack\bin\ServiceStack.Interfaces.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebAPPWithServiceStack\bin\ServiceStack.Text.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebAPPWithServiceStack\bin\ServiceStack.xml
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebAPPWithServiceStack\bin\ServiceStack.Client.xml
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebAPPWithServiceStack\bin\ServiceStack.Common.xml
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebAPPWithServiceStack\bin\ServiceStack.Interfaces.xml
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebAPPWithServiceStack\bin\ServiceStack.Text.xml
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebAPPWithServiceStack\obj\Debug\WebAPPWithServiceStack.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebAPPWithServiceStack\obj\Debug\WebAPPWithServiceStack.pdb

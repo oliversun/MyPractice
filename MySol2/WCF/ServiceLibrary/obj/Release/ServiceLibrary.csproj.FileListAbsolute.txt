@@ -1,0 +1,5 @@
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ServiceLibrary\bin\Release\ServiceLibrary.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ServiceLibrary\bin\Release\ServiceLibrary.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ServiceLibrary\obj\Release\ServiceLibrary.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ServiceLibrary\obj\Release\ServiceLibrary.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ServiceLibrary\obj\Release\ServiceLibrary.csprojResolveAssemblyReference.cache

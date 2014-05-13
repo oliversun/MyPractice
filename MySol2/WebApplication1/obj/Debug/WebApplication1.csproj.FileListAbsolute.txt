@@ -1,0 +1,14 @@
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\WebApplication1\bin\WebApplication1.dll
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\WebApplication1\bin\WebApplication1.pdb
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\WebApplication1\bin\ClassLibrary.dll
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\WebApplication1\bin\ClassLibrary.pdb
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\WebApplication1\obj\Debug\WebApplication1.dll
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApplication1\bin\WebApplication1.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApplication1\bin\WebApplication1.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApplication1\bin\ClassLibrary.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApplication1\bin\ClassLibrary.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApplication1\obj\Debug\WebApplication1.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WebApplication1\obj\Debug\WebApplication1.pdb

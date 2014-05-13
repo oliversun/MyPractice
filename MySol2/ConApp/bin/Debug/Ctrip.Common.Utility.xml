@@ -1,0 +1,1764 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ctrip.Common.Utility</name>
+    </assembly>
+    <members>
+        <member name="T:Ctrip.Common.Utility.IPFunc">
+            <summary>
+            IP帮助类
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.IPFunc.GetRealUserHostAddress">
+            <summary>
+            获取真实的用户IP地址
+            </summary>
+            <returns>用户IP地址</returns>       
+        </member>
+        <member name="M:Ctrip.Common.Utility.IPFunc.Compare(System.String,System.String)">
+            <summary>
+            比较IP地址大小
+            </summary>
+            <param name="ipAddress1">IP地址1</param>
+            <param name="ipAddress2">IP地址2</param>
+            <returns>返回比较结果，1大于、0等于、-1小于</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.IPFunc.IsInRange(System.String,System.String,System.String)">
+            <summary>
+            IP地址是否在地址段的范围内
+            </summary>
+            <param name="ipAddress">IP地址</param>
+            <param name="ipRangeLowerLimit">地址段的下限</param>
+            <param name="ipRangeUpperLimit">地址段的上限</param>
+            <returns>返回是否在范围地址段内的bool值</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.IPFunc.GetClientIP">
+            <summary>
+            获取客户端的地址,获取顺序
+            1.X-Forwarded-For;
+            2.REMOTE_ADDR;
+            </summary>
+            <returns>
+            客户端IP
+            首先判断X-Forwarded-For
+            如果不为空的情况下，取第一IP，并且判断是否为有效的IP地址，否则返回空字符串
+            如果X-Forwarded-For为空，则取REMOTE_ADDR的值。
+            </returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.DBFunc">
+            <summary>
+            连接字符串类
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.DBFunc.machineName">
+            <summary>
+            机器svr号
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetConnectStringKey(System.String,System.String)">
+            <summary>
+            根据关键字获取数据库连接字符串
+            </summary>
+            <param name="key1">本机机器名</param>
+            <param name="key2">数据库名</param>
+            <returns>数据库连接字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetConnectStringKeyByMachineName(System.String)">
+            <summary>
+            根据关键字以及机器名获取数据库连接字符串,机器名自动获取
+            </summary>
+            <param name="key">关键字</param>
+            <returns>返回连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.TestConnection(System.String)">
+            <summary>
+            连接测试
+            </summary>
+            <param name="connectionString">连接串</param>
+            <returns>连接成功返回true，否则返回false</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltRealTimeDBSelectConnectionString">
+            <summary>
+            获取FltRealTimeDB select连接串
+            </summary>
+            <returns>返回FltRealTimeDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltRealTimeDBInsertConnectionString">
+            <summary>
+            获取FltRealTimeDB insert连接串
+            </summary>
+            <returns>返回FltRealTimeDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetHotelPubDBSelectConnectionString">
+             <summary>
+            获取HotelPubDB select连接串
+             </summary>
+             <returns>返回HotelPubDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetHotelPubDBInsertConnectionString">
+             <summary>
+            获取HotelPubDB Insert连接串
+             </summary>
+             <returns>返回HotelPubDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetHotelInputDBSelectConnectionString">
+            <summary>
+            获取HotelInputDB select连接串
+            </summary>
+            <returns>返回HotelInputDB select连接串</returns>  
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetHotelInputDBInsertConnectionString">
+            <summary>
+            获取HotelInput insert连接串
+            </summary>
+            <returns>返回HotelInput insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetEmailDBSelectConnectionString">
+             <summary>
+            获取EmailDB select连接串
+             </summary>
+             <returns>返回EmailDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetEmailDBInsertConnectionString">
+            <summary>
+            获取EmailDB insert连接串
+            </summary>
+            <returns>返回EmailDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetProductDBSelectConnectionString">
+            <summary>
+            获取ProductDB select连接串
+            </summary>
+            <returns>返回ProductDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetProductDBInsertConnectionString">
+            <summary>
+            获取ProductDB insert连接串
+            </summary>
+            <returns>返回ProductDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetPkgProductdbSelectConnectionString">
+            <summary>
+            获取PkgProductdb select连接串
+            </summary>
+            <returns>返回PkgProductDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetPkgControlDBSelectConnectionString">
+            <summary>
+            获取PkgControlDB　select连接串
+            </summary>
+            <returns>返回PkgControlDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetPkgControlDBInsertConnectionString">
+            <summary>
+            获取 PkgControlDB insert连接串
+            </summary>
+            <returns>返回PkgControlDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltOrderIDDBSelectConnectionString">
+            <summary>
+            获取FltOrderIDDB select连接串
+            </summary>
+            <returns>返回FltOrderIDDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltOrderIDDBInsertConnectionString">
+            <summary>
+            获取FltOrderIDDB insert连接串
+            </summary>
+            <returns>返回FltOrderIDDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltOrderDBSelectConnectionString">
+            <summary>
+            获取FltOrderDB select连接串
+            </summary>
+            <returns>返回FltOrderDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltOrderDBInsertConnectionString">
+            <summary>
+            获取FltOrderDB insert连接串
+            </summary>
+            <returns>返回FltOrderDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltIntlOnlineOrderDBInsertConnectionString">
+            <summary>
+            获取FltIntlOnlineOrderDB insert连接串
+            </summary>
+            <returns>返回FltIntlOnlineOrderDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltIntlOnlineOrderDBSelectConnectionString">
+            <summary>
+            获取FltIntlOnlineOrderDB　select连接串
+            </summary>
+            <returns>返回FltIntlOnlineOrderDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltOrderOnlineDBInsertConnectionString">
+            <summary>
+            获取FltOrderOnlineDB　insert连接串
+            </summary>
+            <returns>返回FltOrderOnlineDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltOrderOnlineDBSelectConnectionString">
+            <summary>
+            获取FltOrderOnlineDB　select连接串
+            </summary>
+            <returns>返回FltOrderOnlineDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltOrderBakDBInsertConnectionString">
+            <summary>
+            获取FltOrderBakDB　insert连接串
+            </summary>
+            <returns>返回FltOrderBakDB insert连接串</returns>       
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltOrderBakDBSelectConnectionString">
+            <summary>
+            获取FltOrderBakDB　select连接串
+            </summary>
+            <returns>返回FltOrderBakDB select连接串</returns>       
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltRealTimeProductDBSelectConnectionString">
+            <summary>
+            获取FltRealTimeProductDB select连接串
+            </summary>
+            <returns>返回FltRealTimeProductDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetApplogDBSelectConnectionString">
+            <summary>
+            获取ApplogDB　select连接串
+            </summary>
+            <returns>返回ApplogDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetApplogDBInsertConnectionString">
+            <summary>
+            获取ApplogDB　insert连接串
+            </summary>
+            <returns>返回ApplogDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltProductDBSelectConnectionString">
+            <summary>
+            获取FltProductDB select连接串
+            </summary>
+            <returns>返回FltProductDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltProductDBInsertConnectionString">
+            <summary>
+            获取FltProductDB　insert连接串
+            </summary>
+            <returns>返回FltProductDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetUserDBSelectConnectionString">
+            <summary>
+            获取UserDB　select连接串
+            </summary>
+            <returns>返回UserDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetUserDBInsertConnectionString">
+            <summary>
+            获取UserDB　insert连接串
+            </summary>
+            <returns>返回UserDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltFavReplCacheDBSelectConnectionString">
+            <summary>
+            获取FltFavReplCacheDB　select连接串
+            </summary>
+            <returns>返回FltFavReplCacheDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltFavReplCacheDBInsertConnectionString">
+            <summary>
+            获取FltFavReplCacheDB　insert连接串
+            </summary>
+            <returns>返回FltFavReplCacheDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltFavDBSelectConnectionString">
+            <summary>
+            获取FltFavDB　select连接串
+            </summary>
+            <returns>返回FltFavDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltFavDBInsertConnectionString">
+            <summary>
+            获取FltFavDB　insert连接串
+            </summary>
+            <returns>返回FltFavDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetAccDBSelectConnectionString">
+            <summary>
+            获取AccDB　select连接串
+            </summary>
+            <returns>返回AccDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetAccDBInsertConnectionString">
+            <summary>
+            获取AccDB　insert连接串
+            </summary>
+            <returns>返回AccDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetOrderDBSelectConnectionString">
+            <summary>
+            获取OrderDB　select连接串
+            </summary>
+            <returns>返回OrderDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetOrderDBInsertConnectionString">
+            <summary>
+            获取OrderDB　insert连接串
+            </summary>
+            <returns>返回OrderDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GeteBookingDBSelectConnectionString">
+            <summary>
+            获取eBookingDB select连接串
+            </summary>
+            <returns>返回eBookingDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetCHtlOrderDBSelectConnectionString">
+            <summary>
+            获取HtlOrderDB select连接串
+            </summary>
+            <returns>返回HtlOrderDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetCacheDBSelectConnectionString">
+            <summary>
+            获取CacheDB select连接串
+            </summary>
+            <returns>返回CacheDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetHtlArchivesDBSelectConnectionString">
+            <summary>
+            获取HtlArchivesDB select连接串
+            </summary>
+            <returns>返回HtlArchivesDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetConfigDBSelectConnectionString">
+            <summary>
+            获取ConfigDB select连接串
+            </summary>
+            <returns>返回ConfigDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetAuthDBSelectConnectionString">
+            <summary>
+            获取AuthDB select连接串
+            </summary>
+            <returns>返回AuthDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetMisDBSelectConnectionString">
+            <summary>
+            获取MisDB select连接串
+            </summary>
+            <returns>返回MisDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetMisDBInsertConnectionString">
+            <summary>
+            获取MisDB insert连接串
+            </summary>
+            <returns>返回MisDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetReportDBSelectConnectionString">
+            <summary>
+            获取ReportDB select连接串
+            </summary>
+            <returns>返回ReportDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetInputDBSelectConnectionString">
+            <summary>
+            获取InputDB select连接串
+            </summary>
+            <returns>返回InputDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetInputDBInsertConnectionString">
+            <summary>
+            获取InputDB insert连接串
+            </summary>
+            <returns>返回InputDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetDestinationDBSelectConnectionString">
+            <summary>
+            获取DestinationDB select连接串
+            </summary>
+            <returns>返回DestinationDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetMerchantDBSelectConnectionString">
+            <summary>
+            获取MerchantDB select连接串
+            </summary>
+            <returns>返回MerchantDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetHtlOnlineOrderDBSelectConnectionString">
+            <summary>
+            获取HtlOnlineOrderDB select连接串
+            </summary>
+            <returns>返回HtlOnlineOrderDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetHtlOnlineOrderDBInsertConnectionString">
+            <summary>
+            获取HtlOnlineOrderDB insert连接串
+            </summary>
+            <returns>返回HtlOnlineOrderDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetOrderBakDBSelectConnectionString">
+            <summary>
+            获取OrderBakDB select连接串
+            </summary>
+            <returns>返回OrderBakDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetCommDBInsertConnectionString">
+            <summary>
+            获取CommDB insert连接串
+            </summary>
+            <returns>返回CommDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetCommDBSelectConnectionString">
+            <summary>
+            获取CommDB select连接串
+            </summary>
+            <returns>返回CommDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetHtlOfflineOrderDBSelectConnectionString">
+            <summary>
+            获取HtlOfflineOrderDB select连接串
+            </summary>
+            <returns>返回HtlOfflineOrderDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetHtlOfflineOrderDBInsertConnectionString">
+            <summary>
+            获取HtlOfflineOrderDB insert连接串
+            </summary>
+            <returns>返回HtlOfflineOrderDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltOfflineOrderDBSelectConnectionString">
+            <summary>
+            获取FltOfflineOrderDB select连接串
+            </summary>
+            <returns>返回FltOfflineOrderDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetFltOfflineOrderDBInsertConnectionString">
+            <summary>
+            获取FltOfflineOrderDB insert连接串
+            </summary>
+            <returns>返回FltOfflineOrderDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetK3AccDBSelectConnectionString">
+            <summary>
+            获取K3AccDB select连接串
+            </summary>
+            <returns>返回K3AccDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetK3AccDBInsertConnectionString">
+            <summary>
+            获取K3AccDB insert连接串
+            </summary>
+            <returns>返回K3AccDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetAccHotelDBSelectConnectionString">
+            <summary>
+            获取AccHotelDB select连接串
+            </summary>
+            <returns>返回AccHotelDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetAccHotelDBInsertConnectionString">
+            <summary>
+            获取AccDB insert连接串
+            </summary>
+            <returns>返回AccDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetPayDBSelectConnectionString">
+            <summary>
+            获取PayDB select连接串
+            </summary>
+            <returns>返回PayDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetPayDBInsertConnectionString">
+            <summary>
+            获取PayDB insert连接串
+            </summary>
+            <returns>返回PayDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetPkgOrderDBSelectConnectionString">
+            <summary>
+            获取PkgOrderDB select连接串
+            </summary>
+            <returns>返回PkgOrderDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetPkgOrderDBInsertConnectionString">
+            <summary>
+            获取PkgOrderDB insert连接串
+            </summary>
+            <returns>返回PkgOrderDB insert</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetK3_VoucherDBSelectConnectionString">
+            <summary>
+            获取K3_VoucherDB select连接串
+            </summary>
+            <returns>返回K3_VoucherDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetK3_VoucherDBInsertConnectionString">
+            <summary>
+            获取K3_VoucherDB insert连接串
+            </summary>
+            <returns>返回K3_VoucherDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetRoomStatusDBSelectConnectionString">
+            <summary>
+            获取RoomStatusDB select连接串
+            </summary>
+            <returns>返回RoomStatusDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetRoomStatusDBInsertConnectionString">
+            <summary>
+            获取RoomStatusDB insert连接串
+            </summary>
+            <returns>返回RoomStatusDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetPkgOnlineOrderDBSelectConnectionString">
+            <summary>
+            获取PkgOnlineOrderDB select连接串
+            </summary>
+            <returns>返回PkgOnlineOrderDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetPkgOnlineOrderDBInsertConnectionString">
+            <summary>
+            获取PkgOnlineOrderDB insert连接串
+            </summary>
+            <returns>返回PkgOnlineOrderDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetChinaTravelDBSelectConnectionString">
+            <summary>
+            获取ChinaTravelDB select连接串
+            </summary>
+            <returns>返回ChinaTravelDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetChinaTravelDBInsertConnectionString">
+            <summary>
+            获取ChinaTravelDB insert连接串
+            </summary>
+            <returns>返回ChinaTravelDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetCRMDBSelectConnectionString">
+            <summary>
+            获取CRMDB select连接串
+            </summary>
+            <returns>返回CRMDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetCRMDBInsertConnectionString">
+            <summary>
+            获取CRMDB insert连接串
+            </summary>
+            <returns>返回CRMDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetPkgPubDBSelectConnectionString">
+            <summary>
+            获取PkgPubDB select连接串
+            </summary>
+            <returns>返回PkgPubDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetPkgPubDBInsertConnectionString">
+            <summary>
+            获取PkgPubDB insert连接串
+            </summary>
+            <returns>返回PkgPubDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetEBankDBSelectConnectionString">
+            <summary>
+            获取EBankDB select连接串
+            </summary>
+            <returns>返回EBankDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetEBankDBInsertConnectionString">
+            <summary>
+            获取EBankDB insert连接串
+            </summary>
+            <returns>返回EBankDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetAccVoucherDBSelectConnectionString">
+            <summary>
+            获取AccVoucherDB select连接串
+            </summary>
+            <returns>返回AccVoucherDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetAccVoucherDBInsertConnectionString">
+            <summary>
+            获取AccVoucherDB insert连接串
+            </summary>
+            <returns>返回AccVoucherDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetItinerarDBSelectConnectionString">
+            <summary>
+            获取ItinerarDB select连接串
+            </summary>
+            <returns>返回ItinerarDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetSMSDBSelectConnectionString">
+            <summary>
+            获取SMSDB select连接串
+            </summary>
+            <returns>返回SMSDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetSMSDBInsertConnectionString">
+            <summary>
+            获取SMSDB insert连接串
+            </summary>
+            <returns>返回SMSDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetCardDBSelectConnectionString">
+            <summary>
+            获取CardDB select连接串
+            </summary>
+            <returns>返回CardDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetCardDBInsertConnectionString">
+            <summary>
+            获取CardDB insert连接串
+            </summary>
+            <returns>返回CardDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetITSMDBSelectConnectionString">
+            <summary>
+            获取ITSMDB select连接串
+            </summary>
+            <returns>返回ITSMDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetITSMDBInsertConnectionString">
+            <summary>
+            获取ITSMDB insert连接串
+            </summary>
+            <returns>返回ITSMDB insert连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetE_ITSMDBSelectConnectionString">
+            <summary>
+            获取E_ITSMDB select连接串
+            </summary>
+            <returns>返回E_ITSMDB select连接串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DBFunc.GetE_ITSMDBInsertConnectionString">
+            <summary>
+            获取E_ITSMDB insert连接串
+            </summary>
+            <returns>返回E_ITSMDB insert连接串</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.ChineseToSpell">
+            <summary>
+            汉字转拼音工具
+            历史：2009-09-25  刘剡
+            <para>2011.11.30 修改筼[yun]厐[pang]万[wan]煦[xu]洋[yang],增加礽[reng]</para>
+            <para>2011.12.21 替换整个字库为新的内容</para>
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.ChineseToSpell._Allhz">
+            <summary>
+            字库
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.ChineseToSpell.Convert(System.String)">
+            <summary>
+            汉字转拼音
+            </summary>
+            <param name="chinese">汉字字符</param>
+            <returns>转换结果</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.WebRequestFunc">
+            <summary>
+            WebRequest 工具类
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.WebRequestFunc.GetStringFromParameters(System.String)">
+            <summary>
+            从Request.QueryString或者Request.Form中获取字符串
+            </summary>
+            <param name="key">参数Key</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.WebRequestFunc.GetStringFromParameters(System.String,System.String)">
+            <summary>
+            从Request.QueryString或者Request.Form中获取字符串
+            </summary>
+            <param name="keys">参数Key数组</param>
+            <param name="spliter">分隔符</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.WebRequestFunc.GetIntFromParameters(System.String)">
+            <summary>
+            从Request.QueryString或者Request.Form中获取整型数字
+            </summary>
+            <param name="key">参数Key</param>
+            <returns>整型数字</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.WebRequestFunc.GetIntFromParameters(System.String,System.String)">
+            <summary>
+            从Request.QueryString或者Request.Form中获取整型数字
+            </summary>
+            <param name="keys">参数Key数组</param>
+            <param name="spliter">分隔符</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.WebRequestFunc.GetDateTimeFromParameters(System.String)">
+            <summary>
+            从Request.QueryString或者Request.Form中获取时间日期
+            </summary>
+            <param name="key">参数Key</param>
+            <returns>时间日期</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.WebRequestFunc.GetDateTimeFromParameters(System.String,System.String)">
+            <summary>
+            从Request.QueryString或者Request.Form中获取时间日期
+            </summary>
+            <param name="keys">参数Key数组</param>
+            <param name="spliter">分隔符</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.WebRequestFunc.GetBooleanFromParameters(System.String)">
+            <summary>
+            从Request.QueryString或者Request.Form中获取Boolean
+            </summary>
+            <param name="key">参数Key</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.WebRequestFunc.GetBooleanFromParameters(System.String,System.String)">
+            <summary>
+            从Request.QueryString或者Request.Form中获取Boolean
+            </summary>
+            <param name="keys">参数Key数组</param>
+            <param name="spliter">分隔符</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.WebRequestFunc.GetNotEmptyKey(System.String,System.String)">
+            <summary>
+            从参数Key数组中找出第一个不为空的Key
+            </summary>
+            <param name="keys">参数Key数组</param>
+            <param name="spliter">分隔符</param>
+            <returns>Key</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.ValidateNumberFunc">
+            <summary>
+            验证码处理功能
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.ValidateNumberFunc.CreateValidateNumber(System.Int32)">
+            <summary>
+            生成验证码
+            </summary>
+            <param name="length">验证码长度</param>
+            <returns>随机生成的验证码字符串</returns>       
+        </member>
+        <member name="M:Ctrip.Common.Utility.ValidateNumberFunc.CreateValidateGraphic(System.Web.UI.Page,System.String,System.Int32,System.Int32)">
+            <summary>
+            创建验证码的图片
+            </summary>
+            <param name="containsPage">要输出到的page对象</param>
+            <param name="validateNum">验证码</param>     
+            <param name="width">宽度</param>
+            <param name="height">高度</param>
+        </member>
+        <member name="M:Ctrip.Common.Utility.ValidateNumberFunc.GetFontSizePX(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            获取字体的字号的PX值
+            </summary>
+            <param name="width">图片宽度</param>
+            <param name="height">图片高度</param>
+            <param name="validationNumberLength">验证码长度</param>
+            <returns>字号的PX值</returns>        
+        </member>
+        <member name="T:Ctrip.Common.Utility.DataSetHelper">
+            <summary>
+            DataSet帮助类
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.DataSetHelper.ds">
+            <summary>
+            DataSet数据源
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DataSetHelper.#ctor">
+            <summary>
+            构造函数，将其中的数据置空
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DataSetHelper.#ctor(System.Data.DataSet@)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="dataSet">数据源</param>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DataSetHelper.ColumnEqual(System.Object,System.Object)">
+            <summary>
+            判断两列值是否相等
+            </summary>
+            <param name="objectA">需要比较的数据A</param>
+            <param name="objectB">需要比较的数据B</param>
+            <returns>当objectA==objectB时返回true，否则返回false</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DataSetHelper.SelectDistinct(System.String,System.Data.DataTable,System.String)">
+            <summary> 
+            按照fieldName从sourceTable中选择出不重复的行，相当于select distinct fieldName from sourceTable 
+            </summary> 
+            <param name="tableName">表名</param> 
+            <param name="sourceTable">源DataTable</param> 
+            <param name="fieldName">列名称</param> 
+            <returns>一个新的不含重复行的DataTable，列只包括fieldName指明的列</returns> 
+        </member>
+        <member name="M:Ctrip.Common.Utility.DataSetHelper.Distinct(System.String,System.Data.DataTable,System.String)">
+            <summary> 
+            按照fieldName从sourceTable中选择出不重复的行， 
+            并且包含sourceTable中所有的列。 
+            </summary> 
+            <param name="tableName">表名</param> 
+            <param name="sourceTable">源表</param> 
+            <param name="fieldName">字段</param> 
+            <returns>一个新的不含重复行的DataTable</returns> 
+        </member>
+        <member name="P:Ctrip.Common.Utility.DataSetHelper.DataSet">
+            <summary>
+            DataSet中数据
+            </summary>
+        </member>
+        <member name="T:Ctrip.Common.Utility.CustomerDbParameter">
+            <summary>
+            存储过程参数的相关操作
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.CustomerDbParameter.customerDbParameter">
+            <summary>
+            用户自定义参数
+            </summary>
+        </member>
+        <member name="P:Ctrip.Common.Utility.CustomerDbParameter.OCustomerDbParameter">
+            <summary>
+            用户自定义参数
+            </summary>
+        </member>
+        <member name="T:Ctrip.Common.Utility.O_CustomerDbParameter">
+            <summary>
+            存储过程参数的相关操作
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.O_CustomerDbParameter.dbType">
+            <summary>
+            参数数据类型
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.O_CustomerDbParameter.parameterName">
+            <summary>
+            参数名
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.O_CustomerDbParameter.parameterValue">
+            <summary>
+            参数值
+            </summary>
+        </member>
+        <member name="P:Ctrip.Common.Utility.O_CustomerDbParameter.DbType">
+            <summary>
+            参数类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.Common.Utility.O_CustomerDbParameter.ParameterName">
+            <summary>
+            参数名称
+            </summary>
+        </member>
+        <member name="P:Ctrip.Common.Utility.O_CustomerDbParameter.Value">
+            <summary>
+            参数值
+            </summary>
+        </member>
+        <member name="T:Ctrip.Common.Utility.UserAuth">
+            <summary>
+            检查并获取用户认证信息,用于登录验证
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.UserAuth.CheckUserToken(System.String)">
+            <summary>
+             解密获取用户认证TOKEN
+             若为不合法用户,返回NULL
+            </summary>
+            <param name="tokenString">用户认证字符串</param>
+            <returns>用户登录ID</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.UserAuth.CheckPwd(System.String)">
+            <summary>
+            解密数据库的用户密码
+            </summary>
+            <param name="dBPwd">数据库中的加密密码</param>
+            <returns>解密密码</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.StringFunc">
+            <summary>
+            字符串帮助类
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.StringFunc.GetEnglishOrChinese(System.String)">
+            <summary>
+            判断输入是英文还是中文
+            </summary>
+            <param name="inputString">传入字符串</param>
+            <returns>返回（０：传人参数为空，１：中文，２：英文）</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.StringFunc.IsNumerber(System.String)">
+            <summary>
+            判断输入是否数字
+            </summary>
+            <param name="str">原始字符串</param>
+            <returns>全部为数字时返回true，否则返回false</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.StringFunc.HTMLEncode(System.String)">
+            <summary>
+            HTML 编码方法
+            </summary>
+            <param name="sString">原始字符串</param>
+            <returns>HTML编码后字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.StringFunc.IsBoolean(System.String)">
+            <summary>
+            验证字符串是Boolean
+            </summary>
+            <param name="validatedString">被验证的字符串</param>
+            <returns>true = 字符串是Boolean, false = 字符串不是Boolean</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.StringFunc.GetFormatedDateTimeString(System.DateTime,System.String,System.String)">
+            <summary>
+            返回格式化的日期字符串
+            </summary>
+            <param name="dt">日期</param>
+            <param name="cultureInforName">区域文化名称</param>
+            <param name="format">格式化字符串</param>
+            <returns>格式化的日期字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.StringFunc.GetTraditionalChinese(System.String)">
+            <summary>
+            取得繁体字符传
+            </summary>
+            <param name="inputString">输入字符串</param>
+            <returns>输出字符串</returns>     
+        </member>
+        <member name="M:Ctrip.Common.Utility.StringFunc.IsNumeric(System.String)">
+            <summary>
+            验证字符串是否为数字（正则表达式）（true = 是数字, false = 不是数字）
+            </summary>
+            <param name="validatedString">被验证的字符串</param>
+            <returns>true = 是数字, false = 不是数字</returns>       
+        </member>
+        <member name="M:Ctrip.Common.Utility.StringFunc.IsJustIncludeNumericOrLetter(System.String)">
+            <summary>
+            验证字符串只包含为数字或字母（正则表达式）（true = 只包含数字或字母, false = 还有其他字符）
+            </summary>
+            <param name="validatedString">被验证的字符串</param>
+            <returns>true = 只包含数字或字母, false = 还有其他字符</returns>       
+        </member>
+        <member name="M:Ctrip.Common.Utility.StringFunc.IsDateTime(System.String)">
+            <summary>
+            验证字符串是时间日期(true = 字符串是时间日期, false = 字符串不是时间日期)
+            </summary>
+            <param name="validatedString">被验证的字符串</param>
+            <returns>true = 字符串是时间日期, false = 字符串不是时间日期</returns>       
+        </member>
+        <member name="M:Ctrip.Common.Utility.StringFunc.HasChinese(System.String)">
+            <summary>
+            验证字符串包含中文字符(true = 包含, false = 不包含)
+            </summary>
+            <param name="validatedString">被验证的字符串</param>
+            <returns>true = 包含, false = 不包含</returns>       
+        </member>
+        <member name="M:Ctrip.Common.Utility.StringFunc.IsAllOfChinese(System.String)">
+            <summary>
+            验证字符串全部是中文字符(true = 全部是中文字符, false = 包含非中文字符)
+            </summary>
+            <param name="validatedString">被验证的字符串</param>
+            <returns>true = 包含, false = 不包含</returns>       
+        </member>
+        <member name="M:Ctrip.Common.Utility.StringFunc.GetChineseCount(System.String)">
+            <summary>
+            获取字符串中中文字符的数量
+            </summary>
+            <param name="inputString">输入字符串</param>
+            <returns>中文字符的数量</returns>       
+        </member>
+        <member name="M:Ctrip.Common.Utility.StringFunc.GetRealyStringLength(System.String)">
+            <summary>
+            获取字符串真实长度（中文算两个字节）
+            </summary>
+            <param name="inputString">输入字符串</param>
+            <returns>字符串真实长度（中文算两个字节）</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.InputVerifier">
+            <summary>
+            输入验证类
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.InputVerifier.FilterString">
+            <summary>
+            存在危险的字符串，包括("&lt;", "&gt;", "--", "'")
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.InputVerifier.VerifyContent(System.String)">
+            <summary>
+            校验，当content包含存在危险的字符时，抛出异常
+            </summary>
+            <param name="content">待检查内容</param>
+            <exception cref="T:System.ArgumentException">当包含存在危险的字符时，抛出参数异常</exception>
+        </member>
+        <member name="M:Ctrip.Common.Utility.InputVerifier.VerifyContent(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            校验，当content包含存在危险的字符时，抛出异常，
+            当except不为空时，except不作为危险字符
+            </summary>
+            <param name="content">待检查内容</param>
+            <param name="exceptList">需去除的字符</param>
+            <exception cref="T:System.ArgumentException">当包含存在危险的字符时，抛出参数异常</exception>
+        </member>
+        <member name="T:Ctrip.Common.Utility.DESEncrypt">
+            <summary>
+            DES 加密/解密调用
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DESEncrypt.DecryptDES(System.String)">
+            <summary>
+            DES 解密
+            </summary>
+            <param name="decryptString">待解密字符串</param>
+            <returns>解密后的字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DESEncrypt.EncryptDES(System.String)">
+            <summary>
+            DES 加密
+            </summary>
+            <param name="encryptString">待加密字符串</param>
+            <returns>加密后的字符串</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.SubmitUtil">
+            <summary>
+            Form 提交有效性验证公共类
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.SubmitUtil.ValidMinute">
+            <summary>
+            Form提交有效分钟常量
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.SubmitUtil.GetToken">
+            <summary>
+            获取Form 提交加密开始时间
+            放于Form隐藏变量中，EX:
+            <input type="hidden" value="&lt;%=Ctrip.Common.Utility.SubmitUtil.GetToken() %&gt;" name="hidToken"/>
+            </summary>
+            <returns>返回Base64编码后字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.SubmitUtil.CheckToken(System.DateTime)">
+            <summary>
+            验证提交时间是否有效
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <returns>提交时间在有效时间内返回true，否则返回false</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.SubmitUtil.CheckToken(System.String)">
+            <summary>
+            验证提交时间是否有效
+            </summary>
+            <param name="token">Token 加密字符串</param>
+            <returns>true 有效提交, false 无效提交</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.DataFunc">
+            <summary>
+            数据操作公共方法
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DataFunc.GetFieldStringValue(System.Data.DataTable,System.Data.DataRow,System.String)">
+            <summary>
+            获取字段字符值
+            </summary>
+            <param name="dt">数据表</param>
+            <param name="dr">数据行</param>
+            <param name="fieldName">字段名</param>
+            <returns>字符值</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DataFunc.GetFieldIntValue(System.Data.DataTable,System.Data.DataRow,System.String)">
+            <summary>
+            获取字段整形值
+            </summary>
+            <param name="dt">数据表</param>
+            <param name="dr">数据行</param>
+            <param name="fieldName">字段名</param>
+            <returns>整形</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DataFunc.GetFieldDecimalValue(System.Data.DataTable,System.Data.DataRow,System.String)">
+            <summary>
+            获取字段decimal值
+            </summary>
+            <param name="dt">数据表</param>
+            <param name="dr">数据行</param>
+            <param name="fieldName">字段名</param>
+            <returns>decimal</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DataFunc.GetFieldDateTimeValue(System.Data.DataTable,System.Data.DataRow,System.String)">
+            <summary>
+            获取字段时间日期值
+            </summary>
+            <param name="dt">数据表</param>
+            <param name="dr">数据行</param>
+            <param name="fieldName">字段名</param>
+            <returns>时间日期</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.DataFunc.DataTableContainsField(System.Data.DataTable,System.String)">
+            <summary>
+            数据表包含字段(true = 数据表包含字段; false = 数据表不包含字段)
+            </summary>
+            <param name="dt">数据表</param>
+            <param name="fieldName">字段名</param>
+            <returns>true = 数据表包含字段; false = 数据表不包含字段</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.PropertyConvertType">
+            <summary>
+            属性转换类型
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.PropertyConvertType.PropertyName">
+            <summary>
+            属性名
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.PropertyConvertType.PropertyIndex">
+            <summary>
+            属性索引
+            </summary>
+        </member>
+        <member name="T:Ctrip.Common.Utility.Generical`1">
+            <summary>
+            范型操作静态类
+            </summary>
+            <typeparam name="T">返回的范型</typeparam>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Generical`1.ListConvertFrom``1(System.Collections.Generic.List{``0},Ctrip.Common.Utility.PropertyConvertType)">
+            <summary>
+            列表转换
+            </summary>
+            <typeparam name="V">原始类型</typeparam>
+            <param name="sourceList">原始类型列表</param>
+            <param name="convertType">转换类型</param>
+            <returns>T类型列表</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Generical`1.GetArrayFromList``1(System.Collections.Generic.List{``0},Ctrip.Common.Utility.PropertyConvertType)">
+            <summary>
+            把V类型的List列表转化为T类型的数组
+            </summary>
+            <typeparam name="V">原始类型</typeparam>
+            <param name="vList">原始类型V列表</param>
+            <param name="convertType">属性转换类型</param>
+            <returns>T类型数组</returns>  
+        </member>
+        <member name="M:Ctrip.Common.Utility.Generical`1.GetArrayFromTable(System.Data.DataTable)">
+            <summary>
+            把V类型的List列表转化为T类型的数组
+            </summary>
+            <param name="dt">原始类型列表</param>
+            <returns>T类型数组</returns>        
+        </member>
+        <member name="M:Ctrip.Common.Utility.Generical`1.GetObject``1(``0,Ctrip.Common.Utility.PropertyConvertType)">
+            <summary>
+            把V类型的对象转化为T类型的对象（条件对象的结构是相同的）
+            </summary>
+            <typeparam name="V">原始类型V</typeparam>
+            <param name="objectV">原始对象</param>
+            <param name="convertType">属性转换类型</param>
+            <returns>转化后的对象</returns>        
+        </member>
+        <member name="M:Ctrip.Common.Utility.Generical`1.GetObject(System.Data.DataTable,System.Data.DataRow)">
+            <summary>
+            把V类型的对象转化为T类型的对象（条件对象的结构是相同的）
+            </summary>
+            <param name="dt">数据源</param>
+            <param name="row">数据行</param>
+            <returns>转化后的对象</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Generical`1.GetPropertyIndex(System.Reflection.PropertyInfo[],System.Reflection.PropertyInfo)">
+            <summary>
+            取得属性在属性表中的位置
+            </summary>
+            <param name="properties">属性表（数组）</param>
+            <param name="property">属性</param>
+            <returns>索引号(小于零表示不存在)</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Generical`1.GetObjectQueryString(`0)">
+            <summary>
+            根据对象返回QueryString
+            </summary>
+            <param name="sourceObject">源对象</param>
+            <returns>QueryString</returns>      
+        </member>
+        <member name="M:Ctrip.Common.Utility.Generical`1.TranslateToTraditionalChinese(`0)">
+            <summary>
+            把对象中的字符串翻译成繁体中文
+            </summary>
+            <param name="sourceObject">源对象</param>     
+        </member>
+        <member name="T:Ctrip.Common.Utility.CommonFunc">
+            <summary>
+            工具类
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertBoolToTOrF(System.Boolean)">
+            <summary>
+            转换Bool值为F或T
+            </summary>
+            <param name="source">源数据</param>
+            <returns>source为true时返回T，否则返回F</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertToWeek``1(``0)">
+            <summary>
+            转换Object为星期值
+            </summary>
+            <typeparam name="T">输入源的类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回星期几</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertToWeek(System.DayOfWeek)">
+            <summary>
+            转换DayOfWeek为星期几，其中Sunday返回7
+            </summary>
+            <param name="week">DayOfWeek值</param>
+            <returns>返回星期几</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertDateTimeOrNull``1(``0)">
+            <summary>
+            转换Object为DateTime？
+            </summary>
+            <typeparam name="T">参数类型</typeparam>
+            <param name="source">需转换的参数</param>
+            <returns>返回时间值</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertToBool``1(``0)">
+            <summary>
+            转换字符串为true、false
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回true或false</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ChangeTelephoneString(System.String,System.String)">
+            <summary>
+            移除特定字符串
+            </summary>
+            <param name="container">源数据字符串</param>
+            <param name="specialString">特定字符串</param>
+            <returns>当源字符串包含特定字符串串时返回String.Empty，否则返回源字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.IsNumeric(System.String)">
+            <summary>
+            判断输入字符串是否全部为数字
+            </summary>
+            <param name="str">输入字符串</param>
+            <returns>输入字符串全部为数字时返回true，否则返回false</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertToEnum``2(``0)">
+            <summary>
+            源数据转换为指定的枚举类型
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <typeparam name="V">目标枚举类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>当源数据可转换为目标枚举类型时返回转换后的枚举值，否则返回枚举默认值</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertObjectToInt``1(``0)">
+            <summary>
+            转换数据为int?型
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回int?值</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertToByte``1(``0)">
+            <summary>
+            转换数据为byte型
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回byte值</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.RoundToInt``1(``0)">
+            <summary>
+            四舍五入
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回四舍五入后的值</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertObjectToDecimal``1(``0)">
+            <summary>
+            转换数据为decimal?型
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回转换后的decimal?值</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertObjectToDecimalSingle``1(``0)">
+            <summary>
+            转换数据为decimal类型
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回转换后的decimal值，当源数据不能转换为decimal时返回0</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertObjectToInt32``1(``0)">
+            <summary>
+            转换数据为int型
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回转换后的int值，当不能转换为int值时返回0</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertDateTime``1(``0)">
+            <summary>
+            转换数据为DateTime类型
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回转换后的DateTime，当不能转换为DateTime时，返回default( DateTime )</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertToSingle``1(``0)">
+            <summary>
+            转换源数据为float类型
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回转换后的float值，当不能转换为float时返回0f</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ChangeZeroToNegative(System.Nullable{System.Decimal})">
+            <summary>
+            把结果为0，转换成-1
+            </summary>
+            <param name="source">源数据</param>
+            <returns>当source为0时返回null，否则返回source</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.CheckIsIntAndConvertToInt(System.String)">
+            <summary>
+            检查是否为整数还是小数。
+            如果是整数，去掉保留两位小数(如:111.00 => 111)
+            反则，保留两位小数(如:111.12 => 111.12)
+            </summary>
+            <param name="result">源数据</param>
+            <returns>返回转换后的int值</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertToRound``1(``0)">
+            <summary>
+            不为空时，四舍五入保留两位小数
+            为空时，返回空字符
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回转换后的字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertToPercentDecimal``1(``0)">
+            <summary>
+            转换百分数为小数
+            如：15%=>0.15
+            为Null或空时，返回空字符
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回转换后的字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertToPercentString``1(``0)">
+            <summary>
+            转换百分数
+            如：15=>15%
+            为Null或空时，返回空字符
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回转换后的字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertToNull``1(``0)">
+             <summary>
+            转换源数据为null
+             </summary>
+             <typeparam name="T">源数据类型</typeparam>
+             <param name="source">源数据</param>
+             <returns>为-1时，返回为空，不为空时，保留两位小数</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertObjectToString``1(``0)">
+            <summary>
+            转换源数据为字符串
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回转换后的字符串</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Ctrip.Common.Utility.CommonFunc.CovertNBSP(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:Ctrip.Common.Utility.CommonFunc.ConvertToEmptyOrSymbolX(System.String)" -->
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertSymbolPercent(System.String)">
+            <summary>
+            转换包含“%"
+            如：12% => 12
+            </summary>
+            <param name="source">源数据</param>
+            <returns>返回转换后的字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertToZero``1(``0)">
+            <summary>
+            转换数据为字符串
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回转换后的字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertObjectToNullableInt``1(``0)">
+            <summary>
+            转换数据为int?型
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回转换后的int?值</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.GetDayOfWeek(System.DateTime)">
+            <summary>
+            如果是星期天时0=>7,否则返回其值
+            </summary>
+            <param name="dt">DateTime</param>
+            <returns>1-7</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.GetDateTimeIntlFormat(System.DateTime)">
+            <summary>
+            得到日期的英文格式
+            </summary>
+            <param name="date">源数据</param>
+            <returns>返回日期的英文歌是</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.GetDateTimeFormat(System.DateTime)">
+            <summary>
+            格式化时间字符串
+            </summary>
+            <param name="date">源数据</param>
+            <returns>返回格式化后数据</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.IsDefaultOrF``1(``0)">
+            <summary>
+            检查是否为空，为空返回"F",不为空返回"本身"
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>为空返回"F",不为空返回"本身"</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.IsDefaultOrRMB``1(``0)">
+            <summary>
+            检查是否为空，为空返回"RMB",不为空返回"本身"
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>为空返回"RMB",不为空返回"本身"</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertToFormatInt``1(``0,System.Int32)">
+            <summary>
+            转换数据为符合格式的32-bit签名整数
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <param name="provider">32-bit签名</param>
+            <returns>返回转换后的值，当不能转换时返回0</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.ConvertToTrimString``1(``0)">
+            <summary>
+            去除字符串空格
+            </summary>
+            <typeparam name="T">源数据类型</typeparam>
+            <param name="source">源数据</param>
+            <returns>返回去除空格的字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CommonFunc.StringSplit(System.String,System.Char)">
+            <summary>
+            字符串分隔成数组
+            </summary>
+            <param name="tmpStr">分隔字符串</param>
+            <param name="separator">分隔符</param>
+            <returns>数组</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.Base64Encrypt">
+            <summary>
+            Base64 加/解密公共类
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.Base64Encrypt.base64EncodeChars">
+            <summary>
+            base64 编码字符集
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.Base64Encrypt.base64DecodeChars">
+            <summary>
+            base64 解码字符集
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Base64Encrypt.Base64Encode(System.String)">
+            <summary>
+            base64 加密
+            </summary>
+            <param name="str">需加密的字符串</param>
+            <returns>加密后字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Base64Encrypt.Base64Decode(System.String)">
+            <summary>
+            base 解密
+            </summary>
+            <param name="str">需解密的字符串</param>
+            <returns>解密后的字符串</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.SecurityUtil">
+            <summary>
+            安全检测工具类,准备废弃，请使用InputVerifier类
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.SecurityUtil.SecurityFilter(System.String)">
+            <summary>
+            安全过滤
+            1.防止跨站脚本攻击安全过滤
+            2.对URL输入访问，过滤掉目录遍历功能
+            </summary>
+            <param name="content">要过滤的内容</param>
+            <returns>返回过滤后字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.SecurityUtil.SecurityScript(System.String)">
+            <summary>
+            转义字符
+            防止跨站脚本攻击安全，将字符进行HtmlEncode编码
+            </summary>
+            <param name="content">要过滤的内容</param>
+            <returns>转义后的字符脚本</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.SecurityUtil.SecuritySqlFilter(System.String)">
+            <summary>
+            安全过滤
+            SQL注入错误安全检查
+            </summary>
+            <param name="content">要检查的内容</param>
+            <returns>检查后的SQL</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.SecurityUtil.SecuritySql(System.String)">
+            <summary>
+            安全过滤
+            SQL注入错误安全过滤
+            </summary>
+            <param name="content">要过滤的内容</param>
+            <returns>过滤后的SQL</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.SecurityUtil.SecurityUrl(System.String)">
+            <summary>
+            安全过滤
+            对URL输入访问，过滤掉目录遍历功能
+            </summary>
+            <param name="content">要过滤的内容</param>
+            <returns>过滤后的URL</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.CookieHelper">
+            <summary>
+            Cookie验证类
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CookieHelper.GetAndVerifyUserID(System.String,System.String)">
+            <summary>
+            Cookie中UID及IP验证
+            </summary>
+            <param name="cookieValue">cookie值（未解密）</param>
+            <param name="ip">Request IP</param>
+            <returns>cookieValue中的UID</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CookieHelper.CheckUserToken(System.String)">
+            <summary>
+             解密获取用户认证TOKEN
+             若为不合法用户,返回NULL
+            </summary>
+            <param name="tokenString">用户认证字符串</param>
+            <returns>用户登录ID</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.Serializer">
+            <summary>
+            序列化类
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Serializer.CastFlatObjectToNameValueCollection``1(``0,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            将平面实体对象转化成NameValueCollection对象        
+            </summary>
+            <typeparam name="T">原始类型T</typeparam>
+            <param name="t">原始数据</param>
+            <param name="data">序列化后数据容器</param>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Serializer.CastNameValueCollectionToFlatObject``1(``0,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            将NameValueCollection对象转换成平面实体对象        
+            </summary>
+            <typeparam name="T">序列化后类型T</typeparam>
+            <param name="t">序列化数据</param>
+            <param name="data">原始数据</param>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Serializer.CastNameValueCollectionToByteArray(System.Collections.Specialized.NameValueCollection)">
+            <summary>        
+            将NameValueCollection对象序列化成字节数组
+            </summary>
+            <param name="data">原始数据</param>
+            <returns>返回序列化后的字节数组</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Serializer.CastByteArrayToNameValueCollection(System.Byte[])">
+            <summary>
+            将字节数组反序列化成NameValueCollection对象
+            </summary>
+            <param name="b">原始数据</param>
+            <returns>返回反序列化后数据</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Serializer.SerialObject(System.Object,System.Type)">
+            <summary>
+            序列化:将对象序列化成XML字符串
+            </summary>
+            <param name="obj">需要进行序列化的对象</param>
+            <param name="type">对象类型</param>
+            <returns>返回的XML字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Serializer.SerialXML(System.String,System.Type)">
+            <summary>
+            反序列化:将XML字符串序列化成对象
+            </summary>
+            <param name="strXml">XML字符串</param>
+            <param name="type">对象的类型</param>
+            <returns>返回的对象</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.Encryption">
+            <summary>
+            通用加密解密程序集
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Encryption.DecryptDes(System.String,System.String)">
+            <summary>
+             DES解密
+            </summary>
+            <param name="desString">待解密字符串</param>
+            <param name="key">密钥</param>
+            <returns>解密后的字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Encryption.EncryptDes(System.String,System.String)">
+            <summary>
+             Des加密
+            </summary>
+            <param name="desString">待加密字符串</param>
+            <param name="key">密钥</param>
+            <returns>加密后的字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Encryption.MD5(System.String)">
+            <summary>
+            MD5加密
+            </summary>
+            <param name="desString">待加密字符串</param>
+            <returns>加密后的字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Encryption.DecryptDesKey(System.String)">
+            <summary>
+            将用于共享Cookie的DES配置Key解密出来
+            </summary>
+            <param name="desKey">待解密DES Key</param>
+            <returns>解密后 DES Key</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.Chinese">
+            <summary>
+            汉字转拼音静态类,包括功能全拼和缩写
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.Chinese.pyValue">
+            <summary>
+            汉字的机内码数组
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.Chinese.pyName">
+            <summary>
+            机内码对应的拼音数组
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Chinese.Convert(System.String)">
+             <summary>
+            汉字转换成拼音 
+             </summary>
+             <param name="hzString">输入的汉字字符串</param>
+             <returns>返回转换后的拼音字符串</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Chinese.Convert(System.String,System.String)">
+            <summary>
+            把汉字转换成拼音(全拼) 
+            </summary>
+            <param name="hzString">汉字字符串</param>
+            <param name="splitChar">分隔符</param>
+            <returns>返回转换后的拼音</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Chinese.GetSpellStringLower(System.String)">
+            <summary>
+            汉字转拼音缩写
+            </summary>
+            <param name="str">要转换的汉字字符串</param>
+            <returns>拼音缩写</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Chinese.GetSpellStringSupper(System.String)">
+            <summary>
+            汉字转拼音缩写 (大写)
+            </summary>
+            <param name="str">要转换的汉字字符串</param>
+            <returns>拼音缩写</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Chinese.GetSpellCharSupper(System.String)">
+            <summary>
+            取单个字符的拼音声母
+            </summary>
+            <param name="c">要转换的单个汉字</param>
+            <returns>拼音声母</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.Chinese.GetSpellCharLower(System.String)">
+            <summary>
+            取单个字符的拼音声母
+            </summary>
+            <param name="c">要转换的单个汉字</param>
+            <returns>拼音声母</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.CustomerRunsp">
+            <summary>
+            执行存储过程的基类
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.CustomerRunsp.RunSP(System.String,System.Collections.Generic.List{Ctrip.Common.Utility.O_CustomerDbParameter},System.String)">
+            <summary>
+            执行存储过程的公用方法
+            </summary>
+            <param name="connectString">数据连接字符串</param>
+            <param name="o_CustomerDbParameter">存储过程参数的实体类</param>
+            <param name="storeProcedure">存储过程名</param>
+            <returns>返回执行结果，0表示失败</returns>
+        </member>
+        <member name="T:Ctrip.Common.Utility.FileUtil">
+            <summary>
+            文件公共处理类
+            </summary>
+        </member>
+        <member name="F:Ctrip.Common.Utility.FileUtil.arrFileTypeList">
+            <summary>
+            文件类型白名单
+            </summary>
+        </member>
+        <member name="M:Ctrip.Common.Utility.FileUtil.CheckFileType(System.String)">
+            <summary>
+            验证文件扩展名是否属于指定的类型
+            </summary>
+            <param name="strFileFullName">文件全名，包括扩展名</param>
+            <returns>true 验证通过,false 验证失败</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.FileUtil.CheckFileType(System.Web.UI.HtmlControls.HtmlInputFile)">
+            <summary>
+            验证文件扩展名是否属于指定的类型
+            </summary>
+            <param name="objHtmlInputFile">HtmlInputFile上传文件对象</param>
+            <returns>true 验证通过,false 验证失败</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.FileUtil.CheckFileType(System.Web.UI.WebControls.FileUpload)">
+            <summary>
+            验证文件扩展名是否属于指定的类型
+            </summary>
+            <param name="objFileUpload">FileUpload上传文件对象</param>
+            <returns>true 验证通过,false 验证失败</returns>
+        </member>
+        <member name="M:Ctrip.Common.Utility.FileUtil.GetFileNewName">
+            <summary>
+            获取文件新名称
+            </summary>
+            <returns>返回自定义文件名</returns>
+        </member>
+    </members>
+</doc>

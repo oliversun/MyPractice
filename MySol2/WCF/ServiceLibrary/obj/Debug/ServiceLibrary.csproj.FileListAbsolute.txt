@@ -1,0 +1,15 @@
+E:\My Documents\Visual Studio 2010\Projects\MySol2\WCF\ServiceLibrary\bin\Debug\ServiceLibrary.dll
+E:\My Documents\Visual Studio 2010\Projects\MySol2\WCF\ServiceLibrary\bin\Debug\ServiceLibrary.pdb
+E:\My Documents\Visual Studio 2010\Projects\MySol2\WCF\ServiceLibrary\obj\Debug\ResolveAssemblyReference.cache
+E:\My Documents\Visual Studio 2010\Projects\MySol2\WCF\ServiceLibrary\obj\Debug\ServiceLibrary.dll
+E:\My Documents\Visual Studio 2010\Projects\MySol2\WCF\ServiceLibrary\obj\Debug\ServiceLibrary.pdb
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\WCF\ServiceLibrary\bin\Debug\ServiceLibrary.dll
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\WCF\ServiceLibrary\bin\Debug\ServiceLibrary.pdb
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\WCF\ServiceLibrary\obj\Debug\ServiceLibrary.dll
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\WCF\ServiceLibrary\obj\Debug\ServiceLibrary.pdb
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\WCF\ServiceLibrary\obj\Debug\ServiceLibrary.csprojResolveAssemblyReference.cache
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ServiceLibrary\bin\Debug\ServiceLibrary.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ServiceLibrary\bin\Debug\ServiceLibrary.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ServiceLibrary\obj\Debug\ServiceLibrary.csprojResolveAssemblyReference.cache
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ServiceLibrary\obj\Debug\ServiceLibrary.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ServiceLibrary\obj\Debug\ServiceLibrary.pdb

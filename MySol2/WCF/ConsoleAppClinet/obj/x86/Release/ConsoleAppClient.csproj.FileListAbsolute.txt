@@ -1,0 +1,5 @@
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ConsoleAppClinet\bin\Release\ConsoleAppClinet.exe.config
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ConsoleAppClinet\bin\Release\ConsoleAppClinet.exe
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ConsoleAppClinet\bin\Release\ConsoleAppClinet.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ConsoleAppClinet\obj\x86\Release\ConsoleAppClinet.exe
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ConsoleAppClinet\obj\x86\Release\ConsoleAppClinet.pdb

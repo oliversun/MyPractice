@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Uservice.cs" Class="ClassLibrary.Uservice" %>

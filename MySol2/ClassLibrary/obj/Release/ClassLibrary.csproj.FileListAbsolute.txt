@@ -1,0 +1,4 @@
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ClassLibrary\bin\Release\ClassLibrary.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ClassLibrary\bin\Release\ClassLibrary.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ClassLibrary\obj\Release\ClassLibrary.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ClassLibrary\obj\Release\ClassLibrary.pdb

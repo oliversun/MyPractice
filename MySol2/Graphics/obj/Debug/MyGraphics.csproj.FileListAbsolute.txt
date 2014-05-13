@@ -1,0 +1,5 @@
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\Graphics\bin\MyGraphics.dll
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\Graphics\bin\MyGraphics.pdb
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\Graphics\obj\Debug\ResolveAssemblyReference.cache
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\Graphics\obj\Debug\MyGraphics.dll
+D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\Graphics\obj\Debug\MyGraphics.pdb

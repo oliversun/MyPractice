@@ -1,0 +1,10 @@
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\WindowsServiceHost\bin\Release\WindowsServiceHost.exe.config
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\WindowsServiceHost\bin\Release\WindowsServiceHost.exe
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\WindowsServiceHost\bin\Release\WindowsServiceHost.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\WindowsServiceHost\bin\Release\ServiceLibrary.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\WindowsServiceHost\bin\Release\ServiceLibrary.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\WindowsServiceHost\obj\x86\Release\WindowsServiceHost.csprojResolveAssemblyReference.cache
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\WindowsServiceHost\obj\x86\Release\WindowsServiceHost.ProjectInstaller.resources
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\WindowsServiceHost\obj\x86\Release\WindowsServiceHost.csproj.GenerateResource.Cache
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\WindowsServiceHost\obj\x86\Release\WindowsServiceHost.exe
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\WindowsServiceHost\obj\x86\Release\WindowsServiceHost.pdb

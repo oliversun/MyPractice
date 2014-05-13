@@ -1,0 +1,4 @@
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCFApp\WcfServiceLibrary1\bin\Release\WcfServiceLibrary1.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCFApp\WcfServiceLibrary1\bin\Release\WcfServiceLibrary1.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCFApp\WcfServiceLibrary1\obj\Release\WcfServiceLibrary1.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCFApp\WcfServiceLibrary1\obj\Release\WcfServiceLibrary1.pdb

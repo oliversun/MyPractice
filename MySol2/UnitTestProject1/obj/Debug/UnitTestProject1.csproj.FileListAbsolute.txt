@@ -1,0 +1,4 @@
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

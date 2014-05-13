@@ -1,0 +1,727 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hotel.Booking.Recommend.Entity</name>
+    </assembly>
+    <members>
+        <member name="F:Hotel.Booking.Recommend.Entity.HotelInfo.hotel">
+            <summary>
+            酒店ID
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.HotelInfo.hotelName">
+            <summary>
+            酒店名称
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.HotelInfo.hotelEName">
+            <summary>
+            酒店英文名称
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.HotelInfo.isStarLicence">
+            <summary>
+            是否挂牌
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.HotelInfo.star">
+            <summary>
+            酒店星级
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.HotelInfo.rstar">
+            <summary>
+            金银牌 5,6,7,8,9为金牌，4为银牌
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.HotelInfo.country">
+            <summary>
+            国家ID
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.HotelInfo.city">
+            <summary>
+            城市ID
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.HotelInfo.cityName">
+            <summary>
+            城市名称
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.HotelInfo.cityEName">
+            <summary>
+            城市英文名
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.HotelInfo.location">
+            <summary>
+            行政区
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.HotelInfo.locationName">
+            <summary>
+            行政区名称
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.HotelInfo.customerEval">
+            <summary>
+            携程用户评级
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.HotelInfo.hotelType">
+            <summary>
+            酒店类型。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.Hotel">
+            <summary>
+            酒店ID。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.HotelName">
+            <summary>
+            酒店名称。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.HotelEName">
+            <summary>
+            酒店英文名称。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.StarLicence">
+            <summary>
+            是否挂牌。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.Star">
+            <summary>
+            酒店星级。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.Rstar">
+            <summary>
+            金银牌 5,6,7,8,9为金牌，4为银牌
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.Country">
+            <summary>
+            国家ID。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.City">
+            <summary>
+            城市ID。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.CityName">
+            <summary>
+            城市名称。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.CityEName">
+            <summary>
+            城市英文名称。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.Zone">
+            <summary>
+            第一商业区ID。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.ZoneName">
+            <summary>
+            第一商业区名称。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.Zone2">
+            <summary>
+            第二商业区ID。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.Zone2Name">
+            <summary>
+            第二商业区名称。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.Location">
+            <summary>
+            行政区ID。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.LocationEName">
+            <summary>
+            行政区英文名称。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.LocationName">
+            <summary>
+            行政区名称。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.NoVoters">
+            <summary>
+            点评人数。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.Address">
+            <summary>
+            酒店地址。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.Address_intl">
+            <summary>
+            酒店地址（英文）
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.MinPrice">
+            <summary>
+            所有房型最低价（币种为人民币）。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.MinPrice_MyCurrency">
+            <summary>
+            原币种房型最低价。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.Currency_minPrice">
+            <summary>
+            原币种房型最低价币种。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.CustomerEval">
+            <summary>
+            携程用户评级。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.HRatingOverall">
+            <summary>
+            酒店综合评分。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.HRatingLink">
+            <summary>
+            酒店点评URL地址。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.Brief">
+            <summary>
+            酒店简介。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.HotelRecommendType">
+            <summary>
+            强推1，预付立减2，热门3，常住4，收藏5，用户偏好6，其他0
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.HotelURL">
+            <summary>
+            酒店详情页URL。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.LogoUrl">
+            <summary>
+            酒店logo（100*75）
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.LogoUrl_130_130">
+            <summary>
+            酒店logo（130*130）
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.HotelType">
+            <summary>
+            酒店类型。
+            1、国内普通。2、团购。3、惠选
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.Tags">
+            <summary>
+            酒店标签（专享：EDM，热销：HotSale，好评：HotVote）。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.HotelStatusEntity">
+            <summary>
+            酒店动态信息
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelInfo.Recommend">
+            <summary>
+            推荐度。
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.Action">
+            <summary>
+            ddd
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.Action.Select">
+            <summary>
+            查询
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.Action.Update">
+            <summary>
+            更新
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.CityType">
+            <summary>
+            城市类型
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.CityType.DomesticCity">
+            <summary>
+            国内城市
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.CityType.InternationalCity">
+            <summary>
+            海外城市
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.UserQueryInfoResponse">
+            <summary>
+            用户查询信息返回
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.UserQueryInfoResponse.QueryInfoEntity">
+            <summary>
+            请求参数信息
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.UserQueryInfoResponse.RetCode">
+            <summary>
+            返回状态信息
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.RequestTypeAndClassRelationConfig.dic">
+            <summary>
+            私有集合类
+            </summary>
+        </member>
+        <member name="M:Hotel.Booking.Recommend.Entity.RequestTypeAndClassRelationConfig.#cctor">
+            <summary>
+            静态构造函数
+            </summary>
+        </member>
+        <member name="M:Hotel.Booking.Recommend.Entity.RequestTypeAndClassRelationConfig.GetClassName(System.String)">
+            <summary>
+            根据RequestType取得类名
+            </summary>
+            <param name="requestType">请求类型</param>
+            <returns>类名</returns>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.Request">
+            <summary>
+            Request
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.HotelStatusEntity">
+            <summary>
+            酒店动态信息
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelStatusEntity.HandBackCash">
+            <summary>
+            房型中最高返现金额
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelStatusEntity.MinPriceDiscount">
+            <summary>
+            最低价折扣
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.HotelStatusEntity.OriginalMinPrice">
+            <summary>
+            折扣前价
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest">
+            <summary>
+            交叉推荐请求实体。
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest._userBehaviors">
+            <summary>
+            用户行为参数（酒推酒专用）
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest._userPreferences">
+            <summary>
+            用户偏好。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest.UID">
+            <summary>
+            用户Id。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest.CityId">
+            <summary>
+            城市Id。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest.CheckinDate">
+            <summary>
+            入住日期。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest.CheckoutDate">
+            <summary>
+            离店日期。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest.TotalQuantity">
+            <summary>
+            需要返回的酒店总数量。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest.Caller">
+            <summary>
+            调用方。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest.BusinessId">
+            <summary>
+            业务需求标识符。
+            交叉推荐:1;快速预定:2;国际酒店:4;酒推酒:5;
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest.LandMarkLon">
+            <summary>
+            地标经度。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest.LandMarkLat">
+            <summary>
+            地标纬度。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest.UserBehaiors">
+            <summary>
+            用户行为参数(酒推酒专用)
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest.UserTags">
+            <summary>
+            用户标签
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandRequest.UserPreferences">
+            <summary>
+            用户偏好。
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.UserBehavior">
+            <summary>
+            用户行为。
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.UserBehavior._city">
+            <summary>
+            城市
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.UserBehavior._checkinDate">
+            <summary>
+            入住时间。
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.UserBehavior._checkoutDate">
+            <summary>
+            离店时间
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.UserBehavior._star">
+            <summary>
+            星级。查询多个星级请用“,”分隔
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.UserBehavior._zone">
+            <summary>
+            商业区
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.UserBehavior._beginPrice">
+            <summary>
+            起始价格。
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.UserBehavior._endPrice">
+            <summary>
+            截止价格。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.UserBehavior.City">
+            <summary>
+            城市
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.UserBehavior.CheckInDate">
+            <summary>
+            入住时间
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.UserBehavior.CheckOutDate">
+            <summary>
+            离店时间
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.UserBehavior.Star">
+            <summary>
+            星级。查询多个星级请用“,”分隔
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.UserBehavior.Zone">
+            <summary>
+            商业区
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.UserBehavior.BeginPrice">
+            <summary>
+            起始价格。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.UserBehavior.EndPrice">
+            <summary>
+            截止价格。
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.GetHotelRecommandResponse">
+            <summary>
+            交叉推荐返回实体。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandResponse.ReturnCode">
+            <summary>
+            业务返回提示。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandResponse.UserHotelList">
+            <summary>
+            用户维度推荐酒店。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandResponse.HotelList">
+            <summary>
+            业务维度推荐酒店。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetHotelRecommandResponse.CityHotelLink">
+            <summary>
+            酒店城市列表Url。
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.Response">
+            <summary>
+            Response
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.UserPreference">
+            <summary>
+            用户偏好
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.UserPreference._preferenceKey">
+            <summary>
+            偏好Key。
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.UserPreference._preferenceValue">
+            <summary>
+            偏好值
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.UserPreference.PreferenceKey">
+            <summary>
+            偏好Key。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.UserPreference.PreferenceValue">
+            <summary>
+            偏好值
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.GetCityResponse">
+            <summary>
+            城市/景区信息返回信息
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetCityResponse.CityInfoes">
+            <summary>
+            城市信息。
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.CityInfo">
+            <summary>
+            城市/景区信息
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.CityInfo.id">
+            <summary>
+            城市/景区Id。
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.CityInfo.name">
+            <summary>
+            城市/景区名称。
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.CityInfo.pinyin">
+            <summary>
+            城市/景区拼音。
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.CityInfo.parentId">
+            <summary>
+            父级城市的id。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.CityInfo.Id">
+            <summary>
+            城市/景区Id。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.CityInfo.Name">
+            <summary>
+            城市/景区名称。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.CityInfo.PinYin">
+            <summary>
+            城市/景区拼音。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.CityInfo.ParentId">
+            <summary>
+            父级城市的id。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.CityInfo.ParentName">
+            <summary>
+            父级城市名称。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.CityInfo.Province">
+            <summary>
+            省份的id
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.CityInfo.ProvinceName">
+            <summary>
+            省份名称。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.CityInfo.Type">
+            <summary>
+            0为城市，1为景区。
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.CityInfo.Country">
+            <summary>
+            所在国家。
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.UserQueryInfoRequest">
+            <summary>
+            用户搜索信息请求
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.UserQueryInfoRequest.QueryInfoEntity">
+            <summary>
+            请求参数信息
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.UserQueryInfoRequest.Action">
+            <summary>
+            动作
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.UserQueryInfoRequest.CityType">
+            <summary>
+            城市类型
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.RequestType">
+            <summary>
+            请求类型。
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.RequestType.GetHotelRecommandRequest">
+            <summary>
+            酒店推荐服务
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.RequestType.UserQueryInfoRequest">
+            <summary>
+            用户搜索信息
+            </summary>
+        </member>
+        <member name="F:Hotel.Booking.Recommend.Entity.RequestType.GetCityRequest">
+            <summary>
+            城市/景区信息
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.GetCityRequest">
+            <summary>
+            城市/景区信息请求
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.GetCityRequest.Type">
+            <summary>
+            1表示国内，2表示海外。
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.QueryInfoEntity">
+            <summary>
+            用户查询信息
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.QueryInfoEntity.UID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.QueryInfoEntity.City">
+            <summary>
+            城市
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.QueryInfoEntity.CheckInDate">
+            <summary>
+            入住日期
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.QueryInfoEntity.CheckOutDate">
+            <summary>
+            离店日期
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.QueryInfoEntity.Star">
+            <summary>
+            星级 ','号分隔
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.QueryInfoEntity.Remark">
+            <summary>
+            扩充信息使用
+            </summary>
+        </member>
+        <member name="T:Hotel.Booking.Recommend.Entity.MemberTag">
+            <summary>
+            用户标签
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.MemberTag.TagId">
+            <summary>
+            标签标识
+            </summary>
+        </member>
+        <member name="P:Hotel.Booking.Recommend.Entity.MemberTag.TagName">
+            <summary>
+            标签名称。
+            </summary>
+        </member>
+    </members>
+</doc>
