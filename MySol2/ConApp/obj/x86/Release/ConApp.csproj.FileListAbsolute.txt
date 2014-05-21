@@ -14,3 +14,6 @@ D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Release\Servi
 D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\obj\x86\Release\ConApp.exe
 D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\obj\x86\Release\ConApp.pdb
 D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\obj\x86\Release\ConApp.csprojResolveAssemblyReference.cache
+D:\sunjake\Documents\GitHub\MyPractice\MySol2\ConApp\bin\Release\ConApp.exe.config
+D:\sunjake\Documents\GitHub\MyPractice\MySol2\ConApp\obj\x86\Release\ConApp.exe
+D:\sunjake\Documents\GitHub\MyPractice\MySol2\ConApp\obj\x86\Release\ConApp.pdb
