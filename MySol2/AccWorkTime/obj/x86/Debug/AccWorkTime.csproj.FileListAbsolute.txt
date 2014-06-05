@@ -1,8 +1,0 @@
-D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\AccWorkTime\bin\Debug\CtripWorkTime.exe
-D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\AccWorkTime\bin\Debug\CtripWorkTime.pdb
-D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\AccWorkTime\obj\x86\Debug\AccWorkTime.CtripWorkTime.resources
-D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\AccWorkTime\obj\x86\Debug\CtripWorkTime.Properties.Resources.resources
-D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\AccWorkTime\obj\x86\Debug\CtripWorkTime.exe
-D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\AccWorkTime\obj\x86\Debug\CtripWorkTime.pdb
-D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\AccWorkTime\obj\x86\Debug\AccWorkTime.csproj.GenerateResource.Cache
-d:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\AccWorkTime\obj\x86\Debug\AccWorkTime.csprojResolveAssemblyReference.cache

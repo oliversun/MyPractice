@@ -1,5 +1,0 @@
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\GraphicsTest\bin\GraphicsTest.dll
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\GraphicsTest\bin\GraphicsTest.pdb
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\GraphicsTest\obj\Release\GraphicsTest.dll
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\GraphicsTest\obj\Release\GraphicsTest.pdb
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\GraphicsTest\obj\Release\GraphicsTest.csprojResolveAssemblyReference.cache

@@ -38,7 +38,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DymaticCompiler", "DymaticC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicsTest", "GraphicsTest\GraphicsTest.csproj", "{83F5C68F-06DE-4188-8A6D-197F26B9AD07}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebPreview1.1.rar_by_Kai.Ma", "..\WebPreview1.1.rar_by_Kai.Ma", "{C7A7C7C3-7DB1-4657-BC58-97EF65BECEBE}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebPreview1.1.rar_by_Kai.Ma", "..\WebPreview1.1.rar_by_Kai.Ma\", "{C7A7C7C3-7DB1-4657-BC58-97EF65BECEBE}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/WebPreview1.1.rar_by_Kai.Ma"
@@ -63,6 +63,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPPWithServiceStack", "WebAPPWithServiceStack\WebAPPWithServiceStack.csproj", "{E95AD12F-659D-4046-B96C-7D2F0E049892}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{ED95EE14-8FA7-44A4-8334-5E43E8985452}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc4App", "Mvc4App\Mvc4App.csproj", "{F072D4BD-E491-4C72-B44E-7DF4EA01E65C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -264,6 +266,16 @@ Global
 		{ED95EE14-8FA7-44A4-8334-5E43E8985452}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{ED95EE14-8FA7-44A4-8334-5E43E8985452}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{ED95EE14-8FA7-44A4-8334-5E43E8985452}.Release|x86.ActiveCfg = Release|Any CPU
+		{F072D4BD-E491-4C72-B44E-7DF4EA01E65C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F072D4BD-E491-4C72-B44E-7DF4EA01E65C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F072D4BD-E491-4C72-B44E-7DF4EA01E65C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F072D4BD-E491-4C72-B44E-7DF4EA01E65C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F072D4BD-E491-4C72-B44E-7DF4EA01E65C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F072D4BD-E491-4C72-B44E-7DF4EA01E65C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F072D4BD-E491-4C72-B44E-7DF4EA01E65C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F072D4BD-E491-4C72-B44E-7DF4EA01E65C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F072D4BD-E491-4C72-B44E-7DF4EA01E65C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F072D4BD-E491-4C72-B44E-7DF4EA01E65C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,0 @@
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ConsoleAppHost\bin\Release\ConsoleAppHost.exe.config
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ConsoleAppHost\bin\Release\ConsoleAppHost.exe
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ConsoleAppHost\bin\Release\ConsoleAppHost.pdb
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ConsoleAppHost\bin\Release\ServiceLibrary.dll
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ConsoleAppHost\bin\Release\ServiceLibrary.pdb
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ConsoleAppHost\obj\x86\Release\ConsoleAppHost.csprojResolveAssemblyReference.cache
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ConsoleAppHost\obj\x86\Release\ConsoleAppHost.exe
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCF\ConsoleAppHost\obj\x86\Release\ConsoleAppHost.pdb

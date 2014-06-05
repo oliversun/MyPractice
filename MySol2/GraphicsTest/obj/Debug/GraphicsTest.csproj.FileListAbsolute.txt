@@ -1,5 +1,0 @@
-D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\GraphicsTest\bin\GraphicsTest.dll
-D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\GraphicsTest\bin\GraphicsTest.pdb
-D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\GraphicsTest\obj\Debug\GraphicsTest.dll
-D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\GraphicsTest\obj\Debug\GraphicsTest.pdb
-D:\Users\w.sun\Documents\Visual Studio 2010\Projects\MySol2\GraphicsTest\obj\Debug\GraphicsTest.csprojResolveAssemblyReference.cache

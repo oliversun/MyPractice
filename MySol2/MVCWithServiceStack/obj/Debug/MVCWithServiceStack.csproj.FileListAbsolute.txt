@@ -1,1 +1,0 @@
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\MVCWithServiceStack\obj\Debug\MVCWithServiceStack.csprojResolveAssemblyReference.cache

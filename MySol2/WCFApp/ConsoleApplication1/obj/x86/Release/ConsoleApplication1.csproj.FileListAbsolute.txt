@@ -1,8 +1,0 @@
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCFApp\ConsoleApplication1\bin\Release\ConsoleApplication1.exe.config
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCFApp\ConsoleApplication1\bin\Release\ConsoleApplication1.exe
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCFApp\ConsoleApplication1\bin\Release\ConsoleApplication1.pdb
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCFApp\ConsoleApplication1\bin\Release\WcfServiceLibrary1.dll
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCFApp\ConsoleApplication1\bin\Release\WcfServiceLibrary1.pdb
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCFApp\ConsoleApplication1\obj\x86\Release\ConsoleApplication1.csprojResolveAssemblyReference.cache
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCFApp\ConsoleApplication1\obj\x86\Release\ConsoleApplication1.exe
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\WCFApp\ConsoleApplication1\obj\x86\Release\ConsoleApplication1.pdb

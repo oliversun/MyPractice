@@ -1,19 +1,1 @@
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Release\ConApp.exe.config
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Release\ConApp.exe
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Release\ConApp.pdb
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Release\ServiceStack.Client.dll
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Release\ServiceStack.Common.dll
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Release\ServiceStack.dll
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Release\ServiceStack.Interfaces.dll
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Release\ServiceStack.Text.dll
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Release\ServiceStack.xml
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Release\ServiceStack.Client.xml
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Release\ServiceStack.Common.xml
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Release\ServiceStack.Interfaces.xml
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\bin\Release\ServiceStack.Text.xml
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\obj\x86\Release\ConApp.exe
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\obj\x86\Release\ConApp.pdb
-D:\sunjake\Documents\Visual Studio 2012\Projects\MySol2\ConApp\obj\x86\Release\ConApp.csprojResolveAssemblyReference.cache
 D:\sunjake\Documents\GitHub\MyPractice\MySol2\ConApp\bin\Release\ConApp.exe.config
-D:\sunjake\Documents\GitHub\MyPractice\MySol2\ConApp\obj\x86\Release\ConApp.exe
-D:\sunjake\Documents\GitHub\MyPractice\MySol2\ConApp\obj\x86\Release\ConApp.pdb
