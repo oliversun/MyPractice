@@ -7,8 +7,8 @@ using System.Web;
 namespace WebAPPWithServiceStack
 {
    
-        [Route("/hello")]
-        [Route("/hello/{Name}")]
+        [Route("/hello",Verbs="GET,POST")]
+        [Route("/hello/{Name}",Verbs="GET,POST")]
         public class Hello
         {
             public string Name { get; set; }
