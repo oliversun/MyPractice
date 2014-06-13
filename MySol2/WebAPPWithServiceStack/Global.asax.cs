@@ -19,6 +19,18 @@ namespace WebAPPWithServiceStack
             {
                 //register any dependencies your services use, e.g:
                 //container.Register<ICacheClient>(new MemoryCacheClient());
+                // Host settings
+                ServiceStack.Text.JsConfig.EmitCamelCaseNames = false;
+                Feature disableFeatures = Feature.Jsv | Feature.Soap | Feature.Csv | Feature.Xml;
+                SetConfig(new HostConfig (){ 
+                
+                    DefaultContentType="application/json",
+                    EnableFeatures=Feature.All.Remove(disableFeatures),
+#if DEBUG
+                    DebugMode=true
+#endif
+               
+                });
             }
         }
 

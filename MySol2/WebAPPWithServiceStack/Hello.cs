@@ -6,10 +6,10 @@ using System.Web;
 
 namespace WebAPPWithServiceStack
 {
-   
-        [Route("/hello",Verbs="GET,POST")]
-        [Route("/hello/{Name}",Verbs="GET,POST")]
-        public class Hello
+        [Api("Get a hello")]
+        [Route("/hello","GET,OPTIONS")]
+        [Route("/hello/{Name}","GET,OPTIONS")]
+        public class Hello:IReturn<HelloResponse>
         {
             public string Name { get; set; }
         }
