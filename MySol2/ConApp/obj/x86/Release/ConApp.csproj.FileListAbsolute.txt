@@ -1,1 +1,17 @@
 D:\sunjake\Documents\GitHub\MyPractice\MySol2\ConApp\bin\Release\ConApp.exe.config
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\obj\x86\Release\ConApp.csprojResolveAssemblyReference.cache
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\bin\Release\ConApp.exe.config
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\bin\Release\ConApp.exe
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\bin\Release\ConApp.pdb
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\bin\Release\ServiceStack.Client.dll
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\bin\Release\ServiceStack.Common.dll
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\bin\Release\ServiceStack.dll
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\bin\Release\ServiceStack.Interfaces.dll
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\bin\Release\ServiceStack.Text.dll
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\bin\Release\ServiceStack.xml
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\bin\Release\ServiceStack.Client.xml
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\bin\Release\ServiceStack.Common.xml
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\bin\Release\ServiceStack.Interfaces.xml
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\bin\Release\ServiceStack.Text.xml
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\obj\x86\Release\ConApp.exe
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\ConApp\obj\x86\Release\ConApp.pdb

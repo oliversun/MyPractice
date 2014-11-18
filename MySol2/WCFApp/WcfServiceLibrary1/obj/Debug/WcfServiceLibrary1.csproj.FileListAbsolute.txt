@@ -2,3 +2,7 @@ D:\sunjake\Documents\GitHub\MyPractice\MySol2\WCFApp\WcfServiceLibrary1\bin\Debu
 D:\sunjake\Documents\GitHub\MyPractice\MySol2\WCFApp\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.pdb
 D:\sunjake\Documents\GitHub\MyPractice\MySol2\WCFApp\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.dll
 D:\sunjake\Documents\GitHub\MyPractice\MySol2\WCFApp\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.pdb
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\WCFApp\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\WCFApp\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.pdb
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\WCFApp\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.dll
+F:\360data\重要数据\我的文档\GitHub\MyPractice\MySol2\WCFApp\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.pdb

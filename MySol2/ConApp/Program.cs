@@ -34,19 +34,19 @@ namespace ConApp
           //  TDESEN.En("D00016493");
 
             //PDF2Img.Test();
-            string cDate = "";
-            string strReturn = string.Empty;
-            if (!string.IsNullOrEmpty(cDate))
-            {
-                DateTime dt;
-                if (DateTime.TryParse(cDate, out dt))
-                    strReturn = dt.ToString("yyyy-MM-dd");
-                else
-                    strReturn = cDate;
-            }
+            //string cDate = "";
+            //string strReturn = string.Empty;
+            //if (!string.IsNullOrEmpty(cDate))
+            //{
+            //    DateTime dt;
+            //    if (DateTime.TryParse(cDate, out dt))
+            //        strReturn = dt.ToString("yyyy-MM-dd");
+            //    else
+            //        strReturn = cDate;
+            //}
            
 
-            Console.WriteLine(strReturn);
+            //Console.WriteLine(strReturn);
 
             //ListTest.Performance();
 
